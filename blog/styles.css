@@ -1,0 +1,87 @@
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    background: #f8f8f8;
+    padding: 2em 0;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-weight: 400; 
+    color: #143774;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+
+    display: flex;
+    /*separates the two children nav and .title */
+    justify-content: space-between;
+}
+
+.subtitle {
+    font-weight: 700;
+    color: #1792d2;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.nav-tile {
+    /* removes the extra space on the right but keeps the design I want */
+    margin-left: 2em;
+    /* margin: 0 1em; */
+}
+
+.nav-link {
+    color: #707070;
+    text-decoration: none;
+    font-weight: 700;
+    padding: .25em 0; /* making links bigger for easy clicks */
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #1792d2;
+}
+
+.current-page {
+    border-bottom: 1px solid #707070; /*underline the current page */
+}
+
+.current-page:hover {
+    color: #707070; /*prevent the current page to change color on hover*/
+}
+
+@media (max-width:675px) {
+    header {
+        text-align: center;
+    }
+
+    .wrapper {
+        /* stacks on top of each other */
+        flex-direction: column;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .nav-tile {
+        margin: .5em 0;
+    }
+}
