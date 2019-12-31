@@ -1,2 +1,2 @@
 # frontend-portfolio
-A repository of all my Frontend websites &amp; pages
+A repository of some of my Frontend websites &amp; pages
